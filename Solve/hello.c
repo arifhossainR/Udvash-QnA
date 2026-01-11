@@ -1,10 +1,10 @@
 #include<stdio.h>
 void main()
 {
-  int i=10;
-  while(i>=1)
-  {
-    printf("%d", --i);
-    i=i-1;
-  }
+    int a, b, c, d;
+    a=7;
+    b= a++;
+    c= ++a;
+    d= a--;
+    printf ("%d %d %d %d", a, b, c, d);
 }
