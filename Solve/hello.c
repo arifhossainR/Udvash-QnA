@@ -1,10 +1,15 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+
+float celsius_to_fahrenheit(float c)
 {
-    int a, b, c, d;
-    a=7;
-    b= a++;
-    c= ++a;
-    d= a--;
-    printf ("%d %d %d %d", a, b, c, d);
+    return (9 * c) / 5 + 32;
+}
+
+int main()
+{
+    float c, f;
+    scanf("%f", &c);
+    f = celsius_to_fahrenheit(c);
+    printf("%f", f);
+    return 0;
 }
