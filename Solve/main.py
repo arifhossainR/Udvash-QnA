@@ -1,2 +1,6 @@
-for i in range(1, 8, 2):
-    print(i, " ")
+a = (2.5)
+b = float(4)
+c = str(3.0)
+print(a)
+print(b)
+print(c)
