@@ -1,11 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int i;
-    i = 1;
-    while (i <= 5) {
-        printf("I Love Bangladesh.\n");
-        i = i + 1;
+    float a;
+    scanf("%f", &a);
+    if(a >= 0){
+        printf("Positive");
+    }
+    else{
+        printf("Negative");
     }
     return 0;
 }

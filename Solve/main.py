@@ -1,6 +1,2 @@
-a = (2.5)
-b = float(4)
-c = str(3.0)
-print(a)
-print(b)
-print(c)
+for i in range(5, 0, -1):
+    print(i)
