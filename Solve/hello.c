@@ -1,13 +1,9 @@
 #include <stdio.h>
-int main()
-{
-    float a;
-    scanf("%f", &a);
-    if(a >= 0){
-        printf("Positive");
-    }
-    else{
-        printf("Negative");
-    }
+
+int main () {
+    int i, j;
+    i = 5;
+    j = ++i;
+    printf("%d %d", i, j);
     return 0;
 }
