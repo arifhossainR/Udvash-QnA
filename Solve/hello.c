@@ -1,10 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main () {
-    int a = 1;
-    do{
-        printf("ICT\n");
-        a++;
-    } while(a<=3);
+int main ()
+{
+    int i;
+    for(i=1; i<=5; i++)
+    {
+        printf("%d");
+    }
     return 0;
 }

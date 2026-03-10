@@ -1,2 +1,4 @@
-a = 5, 10, 15, 20, 25
-print(a)
+for i in range(1, 11):
+    if i==5:
+        continue
+    print(i)
