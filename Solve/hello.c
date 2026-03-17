@@ -2,10 +2,11 @@
 
 int main ()
 {
-    int i;
-    for(i=1; i<=5; i++)
+    int i, s = 0;
+    for(i=1; i<=6; i++)
     {
-        printf("%d");
+        s = s + i;
     }
+    printf("%d", s);
     return 0;
 }
