@@ -1,4 +1,6 @@
-for i in range(1, 11):
-    if i==5:
-        continue
-    print(i)
+x = 10
+y = 20
+if x > y:
+    print("X")
+else:
+    print("Y")
