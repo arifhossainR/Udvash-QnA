@@ -1,6 +1,5 @@
-x = 10
-y = 20
-if x > y:
-    print("X")
-else:
-    print("Y")
+x = input("Enter a number: ")
+print(type(x))
+
+y = int(input("Enter another number: "))
+print(type(y))
