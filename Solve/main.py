@@ -1,5 +1,2 @@
-x = input("Enter a number: ")
+x = float("4.2")
 print(type(x))
-
-y = int(input("Enter another number: "))
-print(type(y))
