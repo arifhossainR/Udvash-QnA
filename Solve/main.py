@@ -1,2 +1,3 @@
-x = float("4.2")
-print(type(x))
+a = 4
+if a == 4:
+    print(a+1)
