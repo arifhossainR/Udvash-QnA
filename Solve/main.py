@@ -1,3 +1,5 @@
-a = 4
-if a == 4:
-    print(a+1)
+num = 7
+if(num % 2 == 0):
+    print("Even")
+else:
+    print("Odd")
