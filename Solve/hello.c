@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 int main () {
-    int a, b, c, max;
-    scanf("%d %d %d", &a, &b, &c);
-
-    if(a > b && a > c){
-        max = a;
+    double C, F;
+    printf("Enter a temperature in Celsius: ");
+    scanf("%lf", &C);
+    if (C < 0)
+    {
+        printf("Temperature cannot be negative.\n");
     }
-    else if(b > a && b > c){
-        max = b;
+    else
+    {
+        F = (9.0 / 5.0) * C + 32.0;
+        printf("Temperature in Fahrenheit: %f\n", F);
     }
-    else{
-        max = c;
-    }
-
-    printf("The maximum number is: %d\n", max);
     
     return 0;
 }
