@@ -1,18 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main () {
-    double C, F;
-    printf("Enter a temperature in Celsius: ");
-    scanf("%lf", &C);
-    if (C < 0)
-    {
-        printf("Temperature cannot be negative.\n");
-    }
-    else
-    {
-        F = (9.0 / 5.0) * C + 32.0;
-        printf("Temperature in Fahrenheit: %f\n", F);
-    }
-    
+    int a = pow((15/3-9/3), (17%5)) - 4 + 3 + 2 + 7;
+    printf("%d", a);
+
     return 0;
 }
