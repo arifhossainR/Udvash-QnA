@@ -1,17 +1,18 @@
 #include <stdio.h>
 int main ()
 {
-    int i, s = 0, count = 1;
+    int i = 2, s = 0, count = 1;
 
-    for(i=2; i<=500; i=i+3)
+    while(1)
     {
         if(count <= 40){
             s = s + i*i;
+            count = count + 1;
         }
         else{
             break;
         }
-        count++;
+        i = i + 3;
     }
     printf("%d", s);
     

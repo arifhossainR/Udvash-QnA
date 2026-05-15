@@ -1,9 +1,14 @@
 #include <stdio.h>
-#include <math.h>
 
-int main () {
-    int a = pow((15/3-9/3), (17%5)) - 4 + 3 + 2 + 7;
-    printf("%d", a);
-
+int main()
+{    
+    int y = 1990;
+          
+    if(y % 400 == 0 || ((y % 100 != 0) && (y % 4 == 0))){
+        printf("Leap year.");
+    }
+    else{
+        printf("Not leap year.");
+    }
     return 0;
 }
