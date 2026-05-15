@@ -1,14 +1,20 @@
 #include <stdio.h>
+int main ()
+{
+    int i = 2, s = 0, count = 1;
 
-int main()
-{    
-    int y = 1990;
-          
-    if(y % 400 == 0 || ((y % 100 != 0) && (y % 4 == 0))){
-        printf("Leap year.");
+    while(1)
+    {
+        if(count <= 10){
+            s = s + i*i;
+            count = count + 1;
+        }
+        else{
+            break;
+        }
+        i = i + 3;
     }
-    else{
-        printf("Not leap year.");
-    }
+    printf("%d", s);
+    
     return 0;
 }
