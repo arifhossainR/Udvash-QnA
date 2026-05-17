@@ -23,6 +23,6 @@ int main ()
     }
     gcd = l;
     lcm = (n1 * n2) / gcd;
-    printf("LCM is: %d", lcm);
+    printf("The LCM is: %d", lcm);
     return 0;
 }

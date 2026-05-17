@@ -21,6 +21,6 @@ int main ()
         l = s;
         s = t;
     }
-    printf("The result is: %d", l);
+    printf("The gcd is: %d", l);
     return 0;
 }
