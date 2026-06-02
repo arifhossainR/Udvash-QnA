@@ -1,22 +1,26 @@
+from collections import Counter
+
 t = int(input())
 
 for _ in range(t):
     n = int(input())
-    p = list(map(int, input().split()))
+    a = list(map(int, input().split()))
 
-    bad = [0] * (n + 2)
+    freq = Counter(a)
+    values = sorted(freq)
 
-    for i in range(n):
-        if p[i] > i + 1:
-            bad[p[i] + 1] += 1
+    left = 0
+    answer = n
 
-    current_bad = 0
-    ans = 0
+    for sixseven in values:
+        cnt = freq[sixseven]
 
-    for k in range(1, n + 2):
-        current_bad += bad[k]
+        l = left
 
-        # valid seats before k
-        ans = max(ans, (k - 1) - current_bad)
+        r = n - left - cnt
 
-    print(ans)
+        answer = min(answer, max(l, r))
+
+        left += cnt
+
+    print(answer)
