@@ -1,6 +1,9 @@
-Sum=0
-Number=3
-while(Number<=6):
-    Sum=Sum+Number
-print(Sum)
-Number=Number+1
+a = 5
+b = 10.7
+c = "Z"
+d = "Bangladesh"
+
+print(a)
+print(b)
+print(c)
+print(d)
