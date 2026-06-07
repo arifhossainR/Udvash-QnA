@@ -1,13 +1,15 @@
 #include <stdio.h>
 int main ()
 {
-    int i, n, s = 0;
-    printf("Enter the Last Number of the series: ");
-    scanf("%d", &n);
-    for(i = 1; i <= n; i++)
+    int a = 0, b = 4;
+    while(a <= b)
     {
-        s = s + i;
+        a = a + 1;
+        if(a == 3)
+        {
+            break;
+        }
+        printf("FIFA ");
     }
-    printf("Sum of the series: %d.", s);
     return 0;
 }
