@@ -1,8 +1,7 @@
 #include <stdio.h>
-
 int main()
 {
-    int a, b, i, gcd, lcm;
+    int a, b, i, gcd;
     scanf("%d %d", &a, &b);
 
     for(i=1; i <= a && i <= b; i=i+1)
@@ -11,7 +10,6 @@ int main()
             gcd = i;
     }
 
-    lcm = (a * b) / gcd;
-    printf("The lcm is: %d\n", lcm);
+    printf("The gcd is: %d\n", gcd);
     return 0;
 }
