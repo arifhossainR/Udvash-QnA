@@ -1,15 +1,20 @@
 #include <stdio.h>
-int main()
-{
-    int a, b, i, gcd;
-    i = 1;
-    scanf("%d %d", &a, &b);
-    do{
-        if(a%i == 0 && b%i == 0)
-            gcd = i;
-        i = i + 1;
+
+int main() {
+    int a, b, c;
+
+    printf("Enter the values of a, b, c");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if ((a > b) && (a > c)){
+        printf("a is the largest number");
     }
-    while (i <= a && i <= b);
-    printf("The gcd is: %d\n", gcd);
+    else if((b > a) && (b > c)){
+        printf("b is the largest number");
+    }
+    else{
+        printf("c is the largest number");
+    }
+
     return 0;
 }
