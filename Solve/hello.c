@@ -1,20 +1,14 @@
 #include <stdio.h>
-
 int main() {
-    int a, b, c;
-
-    printf("Enter the values of a, b, c");
-    scanf("%d %d %d", &a, &b, &c);
-
-    if ((a > b) && (a > c)){
-        printf("a is the largest number");
+    int C;
+    float F;
+    scanf("%d", &C);
+    if (C >= 0) {
+        F = 9/5.0 * C + 32;
+        printf("%f", F);
     }
-    else if((b > a) && (b > c)){
-        printf("b is the largest number");
+    else {
+        printf("Invalid input.");
     }
-    else{
-        printf("c is the largest number");
-    }
-
     return 0;
 }
