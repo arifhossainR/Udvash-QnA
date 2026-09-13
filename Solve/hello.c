@@ -1,11 +1,14 @@
 #include <stdio.h>
-int main () {
-    int i;
-    for(i = 1; i <= 5; i++)
+
+int main()
+{
+    int i, n, sum = 0;
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++)
     {
-        if(i == 3)
-            continue;
-        printf("%d", i);
+        sum = sum + 600 + 50 * i;
     }
-    return 0 ;
+    printf("%d", sum);
+    return 0;
 }

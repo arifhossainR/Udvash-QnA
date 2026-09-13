@@ -1,6 +1,8 @@
-if (5 > 2):
-    print("5 is greater than 2")
-elif (7 > 4):
-    print("7 is greater than 4")
+n = int(input("Enter an integer: "))
+
+if n > 0:
+    print("positive.")
+elif n < 0:
+    print("negative.")
 else:
-    print("No")
+    print("zero.")
